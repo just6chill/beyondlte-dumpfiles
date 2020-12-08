@@ -1,0 +1,11 @@
+mkdir -p /sdcard/DUMPED_FILES
+
+dd if=/dev/block/13d60000.ufs/by-name/system of=/sdcard/DUMPED_FILES/system.img
+
+dd if=/dev/block/13d60000.ufs/by-name/vendor of=/sdcard/DUMPED_FILES/vendor.img
+
+dd if=/dev/block/13d60000.ufs/by-name/product of=/sdcard/DUMPED_FILES/product.img
+
+dd if=/dev/block/13d60000.ufs/by-name/boot of=/sdcard/DUMPED_FILES/boot.img
+
+dd if=/dev/block/13d60000.ufs/by-name/recovery of=/sdcard/DUMPED_FILES/recovery.img
